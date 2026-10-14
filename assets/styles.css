@@ -99,3 +99,24 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
   .brand { font-size: 1.05rem; }
   .nav-links { gap: 10px; }
 }
+
+/* Stats band */
+.stats { background: var(--dark); color: #fff; padding: 32px 0; }
+.stats-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+.stat-num { display: block; font-family: var(--serif); font-weight: 800; font-size: 2rem; color: #fff; }
+.stat-label { display: block; font-size: 0.85rem; color: #aab2bf; }
+
+.subsection-title.first { margin-top: 0; }
+.section-intro { color: var(--muted); margin-top: -4px; }
+.cards-2 { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.more-link { margin: 20px 0 0; font-weight: 600; }
+.more-link a { text-decoration: none; }
+.timeline-place { font-size: 0.85rem; }
+.bullets { margin: 8px 0 0; padding-left: 18px; color: var(--muted); }
+.bullets li { padding: 0; margin-bottom: 4px; }
+.bullets li::before { display: none; }
+
+@media (max-width: 760px) {
+  .stats-inner { grid-template-columns: repeat(2, 1fr); }
+  .cards-2 { grid-template-columns: 1fr; }
+}
