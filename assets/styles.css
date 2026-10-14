@@ -77,7 +77,7 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
 .tags li { background: var(--alt); border: 1px solid var(--line); padding: 4px 12px; border-radius: 999px; font-size: 0.9rem; }
 
 /* Contact */
-.socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; list-style: none; padding: 0; margin: 24px 0 0; }
+.socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 28px; list-style: none; padding: 0; margin: 24px 0 0; }
 .socials a { color: #e9ecf1; text-decoration: none; font-weight: 500; }
 .socials a:hover { color: #fff; text-decoration: underline; }
 
@@ -155,3 +155,5 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
 .x-links a { font-weight: 600; text-decoration: none; }
 .x-links a:hover { text-decoration: underline; }
 .top-story-text > p.x-links { margin-top: 20px; }
+.socials a { display: inline-flex; align-items: center; gap: 8px; }
+.socials .icon { width: 18px; height: 18px; flex: none; }
