@@ -120,3 +120,13 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
   .stats-inner { grid-template-columns: repeat(2, 1fr); }
   .cards-2 { grid-template-columns: 1fr; }
 }
+
+/* Top story spotlight */
+.top-story { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: var(--radius); padding: 32px; margin-bottom: 48px; }
+.top-story h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.top-story-embed { min-width: 0; }
+.top-story-embed .twitter-tweet { margin: 0 auto !important; }
+.top-story-embed blockquote { margin: 0; padding: 16px; border-left: 3px solid var(--line); }
+@media (max-width: 760px) {
+  .top-story { grid-template-columns: 1fr; padding: 20px; }
+}
