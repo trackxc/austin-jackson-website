@@ -130,3 +130,4 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
 @media (max-width: 760px) {
   .top-story { grid-template-columns: 1fr; padding: 20px; }
 }
+.top-story-embed blockquote + blockquote { margin-top: 16px; }
