@@ -171,3 +171,4 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
 .tweet-card blockquote.twitter-tweet { display: flex; flex-direction: column; flex: 1; }
 .tweet-card .tweet-text { margin: 0 0 10px; font-size: 1.05rem; line-height: 1.55; color: var(--ink); }
 .tweet-by { margin: 0 0 16px; font-size: 0.85rem; color: var(--muted); }
+.tweet-likes strong { font-size: 1.3rem; color: var(--ink); margin-left: 6px; }
