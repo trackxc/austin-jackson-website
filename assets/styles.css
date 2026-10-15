@@ -172,3 +172,5 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
 .tweet-card .tweet-text { margin: 0 0 10px; font-size: 1.05rem; line-height: 1.55; color: var(--ink); }
 .tweet-by { margin: 0 0 16px; font-size: 0.85rem; color: var(--muted); }
 .tweet-likes strong { font-size: 1.3rem; color: var(--ink); margin-left: 6px; }
+#social .cards { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 760px) { #social .cards { grid-template-columns: 1fr; } }
