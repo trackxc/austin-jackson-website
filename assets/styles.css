@@ -227,3 +227,9 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
 /* Story card photos */
 .card-img { display: block; width: calc(100% + 48px); max-width: none; margin: -24px -24px 18px; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius) var(--radius) 0 0; background: var(--alt); }
 @media (max-width: 760px) { .card-img { width: calc(100% + 40px); margin: -20px -20px 16px; } }
+
+/* Whole top story tile is clickable; X links stay on top */
+.top-story { position: relative; transition: box-shadow .15s, transform .15s; }
+.top-story .top-story-actions .btn::after { content: ""; position: absolute; inset: 0; }
+.top-story .x-links { position: relative; z-index: 1; }
+.top-story:hover { box-shadow: 0 8px 22px rgba(20,23,28,.10); transform: translateY(-2px); }
