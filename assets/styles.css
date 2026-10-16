@@ -174,3 +174,40 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
 .tweet-likes strong { font-size: 1.3rem; color: var(--ink); margin-left: 6px; }
 #social .cards { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 760px) { #social .cards { grid-template-columns: 1fr; } }
+
+/* ===== Mobile polish ===== */
+@media (max-width: 760px) {
+  html { scroll-padding-top: 104px; }
+  .nav { height: auto; flex-direction: column; align-items: stretch; padding-top: 10px; padding-bottom: 0; gap: 2px; }
+  .brand { font-size: 1.15rem; text-align: center; }
+  .nav-links { justify-content: space-between; gap: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { display: block; padding: 12px 8px; font-size: 0.9rem; white-space: nowrap; }
+  .hero { padding: 32px 0 40px; }
+  .hero-inner { gap: 24px; }
+  .hero-photo { max-width: 200px; margin: 0 auto; }
+  .hero-text { text-align: center; }
+  .lede { font-size: 1.05rem; margin-left: auto; margin-right: auto; }
+  .hero-cta { flex-direction: column; gap: 10px; }
+  .hero-cta .btn { text-align: center; }
+  .stats { padding: 24px 0; }
+  .stats-inner { gap: 20px 12px; }
+  .stat-num { font-size: 1.6rem; }
+  .section { padding: 48px 0; }
+  .section-title { margin-bottom: 22px; }
+  .card { padding: 20px; }
+  .card h3 { font-size: 1.1rem; }
+  .cards-2 { grid-template-columns: 1fr; }
+  .top-story .top-story-img { aspect-ratio: 3 / 2; height: auto; min-height: 0; }
+  .top-story-actions .btn { width: 100%; text-align: center; }
+  .card-link, .x-links a, .more-link a { display: inline-block; padding: 6px 0; }
+  .timeline-head { flex-direction: column; gap: 0; }
+  .socials { flex-direction: column; align-items: center; gap: 4px; }
+  .socials a { padding: 10px 12px; }
+  .btn-light { word-break: break-all; }
+}
+@media (max-width: 360px) {
+  .container { padding: 0 16px; }
+  .nav-links a { padding: 12px 6px; font-size: 0.85rem; }
+  h1 { font-size: 2.3rem; }
+}
