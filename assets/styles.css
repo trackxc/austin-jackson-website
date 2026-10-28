@@ -278,4 +278,3 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); font-weight: 800; letter-spacing: -
 .hl-links a { font-weight: 600; text-decoration: none; line-height: 1.4; }
 .hl-links a:hover { text-decoration: underline; }
 .hl-links span { display: block; font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
-.hl-links p { margin: 6px 0 0; font-size: 0.9rem; line-height: 1.5; color: var(--ink); }
